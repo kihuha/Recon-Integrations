@@ -8,9 +8,29 @@
 
 <h1>Zendesk</h1>
 
-<!-- Start of radiihelphelp Zendesk Widget script -->
-<script id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=ee07c02e-b1af-4da7-a8d2-3fc2521ee2a6"></script>
-<!-- End of radiihelphelp Zendesk Widget script -->
+<!--&lt;!&ndash; Start of radiihelphelp Zendesk Widget script &ndash;&gt;-->
+<!--<script id="ze-snippet"-->
+<!--        src="https://static.zdassets.com/ekr/snippet.js?key=ee07c02e-b1af-4da7-a8d2-3fc2521ee2a6"></script>-->
+<!--&lt;!&ndash; End of radiihelphelp Zendesk Widget script &ndash;&gt;-->
+
+<script type="text/javascript"> !function (e, t) {
+    if (!window.outbound) {
+        for (var n = window.outbound = [], o = ["identify", "track", "handlePush", "registerApnsToken", "registerGcmToken", "disableApnsToken", "disableGcmToken"], r = 0; r < o.length; r++) {
+            var i = o[r];
+            n[i] = function (e) {
+                return function () {
+                    var t = Array.prototype.slice.call(arguments);
+                    return t.unshift(e), n.push(t), n
+                }
+            }(i)
+        }
+        if (!e.getElementById("outbound-js")) {
+            var s = e.createElement("script");
+            s.type = "text/javascript", s.id = "outbound-js", s.async = !0, s.src = "https://cdn.outbound.io/" + t + ".js";
+            var u = e.getElementsByTagName("script")[0];
+            u.parentNode.insertBefore(s, u)
+        }
+    }
+}(document, "PUBLIC_KEY"); </script>
 </body>
 </html>
