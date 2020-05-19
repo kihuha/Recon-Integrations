@@ -12,5 +12,19 @@
 </head>
 <body>
     <h1>CrazyEgg</h1>
+    <p id="test-line">Not Clicked</p>
+    <button id="test-btn">Click to change</button>
+
+    <script>
+        const line = document.getElementById('test-line')
+        const button = document.getElementById('test-btn')
+
+        button.addEventListener(
+            'click',
+            function () {
+                line.textContent = 'Clicked'
+            }
+        )
+    </script>
 </body>
 </html>
